@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="EBF00D3B-6857-2E70-34AC-A476711AB1C9" containerWithKeyObject="B487CB10-D4A9-1253-D169-6BF7DDDE323B" localFKIndex="376BF1B4-D6F2-3FB3-A8DF-81C61C00800A" name="ODP_PYT_FK">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<generatorID>46F1DEDD-F4FD-34EE-B1DB-ECEFF1FFF0B7</generatorID>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>5FEC77B4-DA9A-CBEE-601D-108E2D6A1896</importedID>
+<referredTableLongName>Pytania</referredTableLongName>
+<deleteRule>RESTRICT</deleteRule>
+<referredTableID>79C47585-EDEC-FDEB-0E06-7CF8A730BC4B</referredTableID>
+<keyObject>5B03C3B4-7E1C-A012-B079-CF629FD49DD3</keyObject>
+<referredKeyID>5B03C3B4-7E1C-A012-B079-CF629FD49DD3</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_pytania</refColNames>
+<transferable>false</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

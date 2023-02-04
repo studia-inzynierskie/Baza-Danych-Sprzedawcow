@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D60AE417-C8F3-799D-28AC-710BE048D341" containerWithKeyObject="B487CB10-D4A9-1253-D169-6BF7DDDE323B" localFKIndex="666731AE-4C0D-4838-40B1-9FD7E1FF500F" name="ODP_ANK_FK">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<generatorID>3CBDB9DE-81CB-898E-796D-B8514DCA3833</generatorID>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>CFAFFABD-FCE9-5A4F-3A99-225C07160D92</importedID>
+<referredTableLongName>Ankiety</referredTableLongName>
+<deleteRule>CASCADE</deleteRule>
+<referredTableID>5656B9E0-EA0F-6868-3B8B-EDE183CC9129</referredTableID>
+<keyObject>2A047E5E-A645-672B-CA1F-D86E67C52B34</keyObject>
+<referredKeyID>2A047E5E-A645-672B-CA1F-D86E67C52B34</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_ankiety</refColNames>
+<transferable>false</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

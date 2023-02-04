@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="BD2C059" id="6A9B0872-2B22-A950-EF6F-5509265A520A" version="3.5">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:24:37 UTC</createdTime>
+<ownerDesignName>BD2C059</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>6A9B0872-2B22-A950-EF6F-5509265A520A</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="5285F70E-3063-2F52-D882-14894E0C213C">
+<designStoragePath>E:\BD2_Projekt\Etap1_ER\BD2C059</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="93D94721-2183-623E-E910-BEE923935BB6">
+<designStoragePath>E:\BD2_Projekt\Etap1_ER\BD2C059</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="73B8412F-5FF7-A2CA-9177-1C97271ECBDC">
+<designStoragePath>E:\BD2_Projekt\Etap1_ER\BD2C059</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="571CFB3F-B936-D5C5-8177-D6E8A98D172D">
+<designStoragePath>E:\BD2_Projekt\Etap1_ER\BD2C059</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="10B3733A-4715-4048-181B-33119422F752">
+<designStoragePath>E:\BD2_Projekt\Etap1_ER\BD2C059</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="AEA3C7F3-3709-97CD-E43C-CD941138FFF8">
+<designStoragePath>E:\BD2_Projekt\Etap1_ER\BD2C059</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="A8EA684C-882C-B4E1-9E9F-D95CDF04172A">
+<designStoragePath>E:\BD2_Projekt\Etap1_ER\BD2C059</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="ACDC9EAC-4B85-135D-DE57-C556994FEC93">
+<designStoragePath>E:\BD2_Projekt\Etap1_ER\BD2C059</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="E259BA0B-153B-ED51-2765-A2163FEAC53E">
+<designStoragePath>E:\BD2_Projekt\Etap1_ER\BD2C059</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="20860D42-B690-CEFC-9F41-76AF3DD3E5B4">
+<designStoragePath>E:\BD2_Projekt\Etap1_ER\BD2C059</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="C8CE02F9-CAB4-7B0F-5DAE-62521EAEADE9">
+<designStoragePath>E:\BD2_Projekt\Etap1_ER\BD2C059</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="77BEA981-1013-B6C6-E161-A8D273A7642C">
+<designStoragePath>E:\BD2_Projekt\Etap 3\BD2C059</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="AB5CD6AD-BD12-D8AD-CD0D-615EB4B861FE">
+<designStoragePath>E:\BD2_Projekt\Etap 3\BD2C059</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="0EBC39BC-2370-B0B5-7B36-7405A8EFCD73">
+<designStoragePath>E:\BD2_Projekt\Etap 3\BD2C059</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="EC0C1C53-CB00-EA4F-707B-7E77BE1575E7">
+<designStoragePath>E:\BD2_Projekt\Etap 3\BD2C059</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="8389EE04-4629-FC95-1B58-5D02013AE12C">
+<designStoragePath>E:\BD2_Projekt\Etap 3\BD2C059</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

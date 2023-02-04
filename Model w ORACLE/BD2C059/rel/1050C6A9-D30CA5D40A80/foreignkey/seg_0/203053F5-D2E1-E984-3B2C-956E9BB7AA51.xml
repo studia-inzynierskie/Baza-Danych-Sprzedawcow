@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="203053F5-D2E1-E984-3B2C-956E9BB7AA51" containerWithKeyObject="2C31C4D0-F728-4924-AB4B-4F6A9A5134E1" localFKIndex="94D80BB6-28C5-E7D1-1EA1-CF96008DEAFD" name="SPRZED_DEAL_FK">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<generatorID>22363CFB-EB22-5BDF-25E2-2F46644861B6</generatorID>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>E698A3DF-F8D0-3B04-5067-FBAEFC09B812</importedID>
+<referredTableLongName>Dealerzy</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>A24E71BB-8B07-35C0-C86E-967D9697E7FB</referredTableID>
+<keyObject>CE94A35F-5A94-ACAC-A8F8-4E766A5F0853</keyObject>
+<referredKeyID>CE94A35F-5A94-ACAC-A8F8-4E766A5F0853</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_dealera</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

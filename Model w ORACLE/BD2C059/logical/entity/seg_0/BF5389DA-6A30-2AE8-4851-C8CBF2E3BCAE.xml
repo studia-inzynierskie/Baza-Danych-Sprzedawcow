@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BF5389DA-6A30-2AE8-4851-C8CBF2E3BCAE" name="Pytania">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Encja Pytania zawiera listę możliwych pytań, które może zawierać ankieta. Każde pytanie posiada treść.]]></commentInRDBMS>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>605D68FF-D1E9-1A16-04F6-0675059555E2</importedID>
+<engineerTo>
+<item key="1050C6A9-4530-D446-529C-D30CA5D40A80" value="true"/>
+<item key="ABCAE517-2F8C-4DB7-12AA-345BCB384B4C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>Pytania</preferredAbbreviation>
+<shortName>PYT</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id pytania" id="1957FC4F-18D6-0C0F-41B0-67B00EB43653">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[PUID - sztucznie generowany]]></commentInRDBMS>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>3CBEA017-2368-68A9-A5A3-B65CF030E119</importedID>
+<engineerTo>
+<item key="1050C6A9-4530-D446-529C-D30CA5D40A80" value="true"/>
+<item key="ABCAE517-2F8C-4DB7-12AA-345BCB384B4C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tresc" id="2065A4F3-A2AE-0B9E-F624-1A4916823EDB">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Treść pytania]]></commentInRDBMS>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>B4760BA6-F531-4D85-C811-D79B0B115E2E</importedID>
+<engineerTo>
+<item key="1050C6A9-4530-D446-529C-D30CA5D40A80" value="true"/>
+<item key="ABCAE517-2F8C-4DB7-12AA-345BCB384B4C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500 CHAR</dataTypeSize>
+<ownDataTypeParameters>500 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8F3AD66D-A095-F506-A12F-36C6F86EE570" name="PYT_PK">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>2DE33323-C8BD-3ABD-AA84-DE6F91F6F21C</importedID>
+<engineerTo>
+<item key="1050C6A9-4530-D446-529C-D30CA5D40A80" value="true"/>
+<item key="ABCAE517-2F8C-4DB7-12AA-345BCB384B4C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1957FC4F-18D6-0C0F-41B0-67B00EB43653</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

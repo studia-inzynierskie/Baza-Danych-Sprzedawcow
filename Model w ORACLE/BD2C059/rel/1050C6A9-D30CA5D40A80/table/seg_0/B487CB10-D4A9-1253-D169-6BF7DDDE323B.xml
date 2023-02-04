@@ -1,0 +1,130 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B487CB10-D4A9-1253-D169-6BF7DDDE323B" name="Odpowiedzi">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Encja Odpowiedzi jest encją łączącą ankiety z pytaniami. Dodatkowo posiada odpowiedzi, jakich udzielił klient odpowiadając na konkretne pytanie. Odpowiedzi są liczbami w skali 1-5.]]></commentInRDBMS>
+<generatorID>9ECDFDB1-471B-77B2-A259-A0B5B16A9B70</generatorID>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>B3E7CCC0-2431-490A-6AE9-1460530ED362</importedID>
+<abbreviation>ODP</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_ankiety" id="D5CCD49E-C9EB-7DDD-E33D-6068C70786D5">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[ID ankiety której dotyczy odpowiedź]]></commentInRDBMS>
+<generatorID>699D7882-0053-FED1-D963-BCD432EE2401</generatorID>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>BF4B7163-9CFB-5CB0-073C-48C1A1D273DB</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D60AE417-C8F3-799D-28AC-710BE048D341" referredColumn="A7D1F3DB-4C76-88B3-AB25-A257BB3DACA2"/>
+</associations>
+</Column>
+<Column name="id_pytania" id="73376E24-4DA6-63E2-D6F1-427DFCFA731B">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[ID pytania którego dotyczy odpowiedź]]></commentInRDBMS>
+<generatorID>BF33FCE1-5A10-A1A2-D27F-D259873344DB</generatorID>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>7A61D19B-40D4-10C9-6F74-C28E9CDCDB33</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EBF00D3B-6857-2E70-34AC-A476711AB1C9" referredColumn="C4AF3DE8-9F8C-9C6A-2F54-0782D3745216"/>
+</associations>
+</Column>
+<Column name="odpowiedz" id="4B865F9B-5DBA-6072-10F0-4BCEDAD141E6">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Odpowiedź klienta na dane pytanie - możliwe wartości to [-1, -0.5, 0, 0.5, 1]]]></commentInRDBMS>
+<generatorID>15249023-AF8F-4F42-C62C-351675B07DC2</generatorID>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>12A84B6F-FB3B-1FC2-92E8-4F7FF3E69CBB</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,2,1</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="04399C62-48A2-1FC2-6A35-3A517181F41C" name="ODP_PK">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<generatorID>2881C717-7761-B3A4-D82E-0D4AAB00ABF1</generatorID>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>20FDF4F2-22D9-3675-E1CB-F03EAD27C73D</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D5CCD49E-C9EB-7DDD-E33D-6068C70786D5"/>
+<colUsage columnID="73376E24-4DA6-63E2-D6F1-427DFCFA731B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B35662D4-8422-383C-7B3B-3380EF589EFC" name="ODP_ANK_FK_IDX">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:30:38 UTC</createdTime>
+<ownerDesignName>BD2C059</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D5CCD49E-C9EB-7DDD-E33D-6068C70786D5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="00982608-24D9-B559-1D82-B0296A19D0C2" name="ODP_PYT_FK_IDX">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:31:10 UTC</createdTime>
+<ownerDesignName>BD2C059</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="73376E24-4DA6-63E2-D6F1-427DFCFA731B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="376BF1B4-D6F2-3FB3-A8DF-81C61C00800A" name="ODP_PYT_FK">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<generatorID>46F1DEDD-F4FD-34EE-B1DB-ECEFF1FFF0B7</generatorID>
+<ownerDesignName>BD2C059</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="73376E24-4DA6-63E2-D6F1-427DFCFA731B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="666731AE-4C0D-4838-40B1-9FD7E1FF500F" name="ODP_ANK_FK">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<generatorID>3CBDB9DE-81CB-898E-796D-B8514DCA3833</generatorID>
+<ownerDesignName>BD2C059</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D5CCD49E-C9EB-7DDD-E33D-6068C70786D5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="ODP_ODPOWIEDZ_CK" directorySegmentName="seg_0" id="30B12F09-5C57-80C9-E41A-417DC7389B93">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>60A0CF42-8665-0672-8AA9-DD0523C83920</importedID>
+<rule><![CDATA[odpowiedz IN (-1, -0.5, 0, 0.5, 1)]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

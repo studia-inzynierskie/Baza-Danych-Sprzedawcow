@@ -1,0 +1,175 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A24E71BB-8B07-35C0-C86E-967D9697E7FB" name="Dealerzy">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Encja Dealera reprezentuje firmę która może być większym dystrybutorem lub może zajmować się produkcją samochodów danej marki.
+Firma ta posiada unikalny NIP, nazwę przedsiębiorstwa, a także może posiadać datę założenia.]]></commentInRDBMS>
+<generatorID>73E9400F-6CCC-1218-C5DE-8CBBCCD5DE78</generatorID>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>D4371229-A6E6-0688-A968-5D1B7ED61F1B</importedID>
+<abbreviation>DEAL</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_dealera" id="E36A617B-80F6-3942-2C42-7D208120A9E1">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[PUID - sztucznie generowany]]></commentInRDBMS>
+<generatorID>147E6277-027F-4BBC-7751-C930BC62E3FD</generatorID>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>101F4EFA-76DC-57F6-FCD8-7A5664D2D7BB</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>DEAL_SEQ</autoIncrementSequenceName>
+<autoIncrementTriggerName>DEAL_SEQ_TRIG</autoIncrementTriggerName>
+</Column>
+<Column name="kod_pocztowy" id="795A4844-89B3-9B51-8650-B42168A0D645">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Służy do zlokalizowania przedsiębiorstwa]]></commentInRDBMS>
+<generatorID>9A91A707-7FD6-6758-C531-602DD7E425F6</generatorID>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>8BA2E46A-1FBA-D3BC-2262-9221BAF89C83</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>6 CHAR</dataTypeSize>
+<ownDataTypeParameters>6 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="miejscowosc" id="4DF72BC2-F63C-4655-DCD5-7A82C882981D">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Służy do zlokalizowania przedsiębiorstwa]]></commentInRDBMS>
+<generatorID>C54187F3-7E3E-C4E7-5E74-34EF0828A361</generatorID>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>FBD35279-704C-329D-5505-E08D79301961</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ulica" id="06548E6A-AD51-5FEA-25A8-3B416C55461E">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Służy do zlokalizowania przedsiębiorstwa]]></commentInRDBMS>
+<generatorID>1D964ED7-EA07-2D92-FDCD-A83A922C728A</generatorID>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>CE862463-3165-F57E-EAFB-576AF714710A</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nr_budynku" id="2C460DB0-9C79-AB95-8283-9419C6C7C6B6">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Służy do zlokalizowania przedsiębiorstwa]]></commentInRDBMS>
+<generatorID>74A28482-802E-C44D-AA98-68F07B94B5C1</generatorID>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>0B636E84-ADDB-B952-3CCC-3AF6F9AB7B1D</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nazwa" id="164ECBEA-963D-87C4-F4FC-A1C67B9A84DC">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nazwa przedsiębiorstwa sprzedającego samochody]]></commentInRDBMS>
+<generatorID>BE63A163-23B1-50BB-6472-075F46B9DE3E</generatorID>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>0BC7519C-2837-EB44-1131-5F07DF8A1C84</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60 CHAR</dataTypeSize>
+<ownDataTypeParameters>60 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nip" id="BD41E559-B7A7-9BD3-7200-69637BA9F1EA">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[NIP firmy - musi być unikalny, każda firma ma inny nip]]></commentInRDBMS>
+<generatorID>7F5E714B-773A-9406-EB6F-AAE1B5773A83</generatorID>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>626D67BE-3C8E-5015-CF44-A01AEA91CB5F</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_zalozenia" id="6DBED204-FCB2-220D-F6E8-2C903D1DC4D7">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[data wskazująca kiedy przedsiębiorstwo zostało założone - atrybut opcjonalny]]></commentInRDBMS>
+<generatorID>98F73109-89DD-C395-43CE-F419EA8FD8A2</generatorID>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>053457F1-39BD-04BD-C4F6-612281366FD0</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CE94A35F-5A94-ACAC-A8F8-4E766A5F0853" name="DEAL_PK">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<generatorID>7FA1AFBA-AF87-3634-6E9E-6A2BE4FEA9E7</generatorID>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>2DCDFC18-C471-1EAB-E534-46AE305372E1</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E36A617B-80F6-3942-2C42-7D208120A9E1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4CD4627B-FE31-27E6-7F9E-E49B33701FAD" name="DEAL_NIP_UN">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<generatorID>18566942-342E-4CFF-785D-DFAC22DD7596</generatorID>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>2F240A01-254E-5A52-E45A-2719EDB5FF6C</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BD41E559-B7A7-9BD3-7200-69637BA9F1EA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="DEAL_KODPOCZ_CK" directorySegmentName="seg_0" id="3475605D-058D-8FD5-13D0-130C698662E5">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>E6206BEE-13ED-1195-CF6E-097FF0467787</importedID>
+<rule><![CDATA[kod_pocztowy LIKE '__-___' AND kod_pocztowy NOT LIKE '% '
+]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="DEAL_NIP_CK" directorySegmentName="seg_0" id="B4872F7F-44A0-4DBD-7DD5-025621DE515B">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>F40131FC-9E53-1056-7CCA-D7AC0657F479</importedID>
+<rule><![CDATA[nip NOT LIKE '% ']]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

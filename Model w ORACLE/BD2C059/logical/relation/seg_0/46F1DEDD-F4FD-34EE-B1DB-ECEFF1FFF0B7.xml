@@ -1,0 +1,23 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ODP PYT FK" directorySegmentName="seg_0" id="46F1DEDD-F4FD-34EE-B1DB-ECEFF1FFF0B7">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>410055A9-F59B-9187-3862-A9541C111ECE</importedID>
+<engineerTo>
+<item key="1050C6A9-4530-D446-529C-D30CA5D40A80" value="true"/>
+<item key="ABCAE517-2F8C-4DB7-12AA-345BCB384B4C" value="true"/>
+</engineerTo>
+<sourceTransferable>false</sourceTransferable>
+<targetPk>8F3AD66D-A095-F506-A12F-36C6F86EE570</targetPk>
+<identifying>true</identifying>
+<nameOnSource>odpowiada na</nameOnSource>
+<nameOnTarget>jest odpowiadane</nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>9ECDFDB1-471B-77B2-A259-A0B5B16A9B70</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>BF5389DA-6A30-2AE8-4851-C8CBF2E3BCAE</targetEntity>
+<transferable>true</transferable>
+</Relation>

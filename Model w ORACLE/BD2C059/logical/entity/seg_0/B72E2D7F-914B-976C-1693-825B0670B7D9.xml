@@ -1,0 +1,164 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B72E2D7F-914B-976C-1693-825B0670B7D9" name="Klienci">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Encja Klienta reprezentuje klientów którzy zakupili samochody u sprzedawców. W założeniu są oni osobami fizycznymi więc posiadają imię oraz nazwisko. Dodatkowo mogą podać swój pesel, lecz jest to dana opcjonalna.]]></commentInRDBMS>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>8842FED7-6F80-C360-292B-043CC9AC3C66</importedID>
+<engineerTo>
+<item key="1050C6A9-4530-D446-529C-D30CA5D40A80" value="true"/>
+<item key="ABCAE517-2F8C-4DB7-12AA-345BCB384B4C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>Klienci</preferredAbbreviation>
+<shortName>KLI</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_klienta" id="ED89A172-D648-7DE9-A14C-146F08412AE3">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[PUID - sztucznie generowany]]></commentInRDBMS>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>CF1E571F-B2F5-427B-F941-D0B777110C3F</importedID>
+<engineerTo>
+<item key="1050C6A9-4530-D446-529C-D30CA5D40A80" value="true"/>
+<item key="ABCAE517-2F8C-4DB7-12AA-345BCB384B4C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="imie" id="32C0759B-E359-A567-D110-03CFC357E28C">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Imie klienta]]></commentInRDBMS>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>46991F24-4816-E7BC-CACB-E4A3B52C0B3F</importedID>
+<engineerTo>
+<item key="1050C6A9-4530-D446-529C-D30CA5D40A80" value="true"/>
+<item key="ABCAE517-2F8C-4DB7-12AA-345BCB384B4C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nazwisko" id="58B0921B-384D-5BC9-CEE4-79CFFE4F627C">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nazwisko klienta]]></commentInRDBMS>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>A64885E8-9375-C517-E134-4A4F16C2926D</importedID>
+<engineerTo>
+<item key="1050C6A9-4530-D446-529C-D30CA5D40A80" value="true"/>
+<item key="ABCAE517-2F8C-4DB7-12AA-345BCB384B4C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 CHAR</dataTypeSize>
+<ownDataTypeParameters>40 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email" id="82331055-7B86-06B7-2400-387A61C4BC07">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Email - służy do kontaktu, a także jest potrzebny do utworzenia konta]]></commentInRDBMS>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>E48D2F39-8A2C-B7CA-4B41-A3B0FCDF8E81</importedID>
+<engineerTo>
+<item key="1050C6A9-4530-D446-529C-D30CA5D40A80" value="true"/>
+<item key="ABCAE517-2F8C-4DB7-12AA-345BCB384B4C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 CHAR</dataTypeSize>
+<ownDataTypeParameters>40 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="login" id="30B5DE04-5A1A-C144-ED21-826FD5689A91">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:49:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Login używany przy logowaniu, każdy użytkownik musi mieć inny login, który jednoznacznie go identyfikuje]]></commentInRDBMS>
+<generatorID>4EF83FDB-F29E-4780-51F3-76DA76D68AB0</generatorID>
+<ownerDesignName>BD2C059</ownerDesignName>
+<engineerTo>
+<item key="1050C6A9-4530-D446-529C-D30CA5D40A80" value="true"/>
+<item key="ABCAE517-2F8C-4DB7-12AA-345BCB384B4C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="haslo" id="F19C4327-8250-00F5-2ABA-D25469604B99">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:49:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Hasło używane przy logowaniu, musi mieć przynajmniej 80 znaków]]></commentInRDBMS>
+<generatorID>873997BE-4392-D4DF-E24B-B83ED8DC5E65</generatorID>
+<ownerDesignName>BD2C059</ownerDesignName>
+<engineerTo>
+<item key="1050C6A9-4530-D446-529C-D30CA5D40A80" value="true"/>
+<item key="ABCAE517-2F8C-4DB7-12AA-345BCB384B4C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 CHAR</dataTypeSize>
+<ownDataTypeParameters>40 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="EA9933C1-A58C-091F-A203-0CC7D5631CFA" name="KLI_PK">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>CF9FE442-0ACF-DB14-0B2D-39797415C337</importedID>
+<engineerTo>
+<item key="1050C6A9-4530-D446-529C-D30CA5D40A80" value="true"/>
+<item key="ABCAE517-2F8C-4DB7-12AA-345BCB384B4C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>30B5DE04-5A1A-C144-ED21-826FD5689A91</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="FCBF4A22-1D86-5F14-4D1E-BB02A79DB9A4" name="KLI_EMAIL_UN">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>AC821BB4-5512-EA6F-5876-E6BA3F02F3E9</importedID>
+<engineerTo>
+<item key="1050C6A9-4530-D446-529C-D30CA5D40A80" value="true"/>
+<item key="ABCAE517-2F8C-4DB7-12AA-345BCB384B4C" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>82331055-7B86-06B7-2400-387A61C4BC07</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="5127B938-9EA3-D3F7-5E71-85B41708BC45" name="KLI LOGIN UN">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:49:52 UTC</createdTime>
+<generatorID>8B41149D-A323-2BFC-724C-F4511114C824</generatorID>
+<ownerDesignName>BD2C059</ownerDesignName>
+<engineerTo>
+<item key="1050C6A9-4530-D446-529C-D30CA5D40A80" value="true"/>
+<item key="ABCAE517-2F8C-4DB7-12AA-345BCB384B4C" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>30B5DE04-5A1A-C144-ED21-826FD5689A91</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

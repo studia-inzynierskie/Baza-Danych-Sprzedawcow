@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="79C47585-EDEC-FDEB-0E06-7CF8A730BC4B" name="Pytania">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Encja Pytania zawiera listę możliwych pytań, które może zawierać ankieta. Każde pytanie posiada treść.]]></commentInRDBMS>
+<generatorID>BF5389DA-6A30-2AE8-4851-C8CBF2E3BCAE</generatorID>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>26498CD6-91F2-647D-D191-8DA58C95FAC8</importedID>
+<abbreviation>PYT</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_pytania" id="C4AF3DE8-9F8C-9C6A-2F54-0782D3745216">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[PUID - sztucznie generowany]]></commentInRDBMS>
+<generatorID>1957FC4F-18D6-0C0F-41B0-67B00EB43653</generatorID>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>6481261F-49C1-22BA-45CF-A656478BE35A</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>PYT_SEQ</autoIncrementSequenceName>
+<autoIncrementTriggerName>PYT_SEQ_TRIG</autoIncrementTriggerName>
+</Column>
+<Column name="tresc" id="A51854EE-0264-F36D-B5F1-B85734F434F9">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Treść pytania]]></commentInRDBMS>
+<generatorID>2065A4F3-A2AE-0B9E-F624-1A4916823EDB</generatorID>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>4E0F770B-2DE3-5D3B-F11D-1A6264924343</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500 CHAR</dataTypeSize>
+<ownDataTypeParameters>500 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5B03C3B4-7E1C-A012-B079-CF629FD49DD3" name="PYT_PK">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<generatorID>8F3AD66D-A095-F506-A12F-36C6F86EE570</generatorID>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>215495CE-796A-5D3E-C073-5D11D7A7134E</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C4AF3DE8-9F8C-9C6A-2F54-0782D3745216"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

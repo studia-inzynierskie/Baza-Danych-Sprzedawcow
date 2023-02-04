@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9ECDFDB1-471B-77B2-A259-A0B5B16A9B70" name="Odpowiedzi">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Encja Odpowiedzi jest encją łączącą ankiety z pytaniami. Dodatkowo posiada odpowiedzi, jakich udzielił klient odpowiadając na konkretne pytanie. Odpowiedzi są liczbami w skali 1-5.]]></commentInRDBMS>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>0BD3E2A9-B84F-16BB-4BFE-B647182107BB</importedID>
+<engineerTo>
+<item key="1050C6A9-4530-D446-529C-D30CA5D40A80" value="true"/>
+<item key="ABCAE517-2F8C-4DB7-12AA-345BCB384B4C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>Odpowiedzi</preferredAbbreviation>
+<shortName>ODP</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id ankiety" id="699D7882-0053-FED1-D963-BCD432EE2401">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[ID ankiety której dotyczy odpowiedź]]></commentInRDBMS>
+<generatorID>3CBDB9DE-81CB-898E-796D-B8514DCA3833</generatorID>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>D10F9FE1-3A06-1873-E6D8-6284878F943D</importedID>
+<engineerTo>
+<item key="1050C6A9-4530-D446-529C-D30CA5D40A80" value="true"/>
+<item key="ABCAE517-2F8C-4DB7-12AA-345BCB384B4C" value="true"/>
+</engineerTo>
+<referedAttribute>D0BDF3E2-99BE-23F0-AF0A-35F97B7A82F5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id pytania" id="BF33FCE1-5A10-A1A2-D27F-D259873344DB">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[ID pytania którego dotyczy odpowiedź]]></commentInRDBMS>
+<generatorID>46F1DEDD-F4FD-34EE-B1DB-ECEFF1FFF0B7</generatorID>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>D69BDF76-DFDC-47A7-F026-626A855F4EB5</importedID>
+<engineerTo>
+<item key="1050C6A9-4530-D446-529C-D30CA5D40A80" value="true"/>
+<item key="ABCAE517-2F8C-4DB7-12AA-345BCB384B4C" value="true"/>
+</engineerTo>
+<referedAttribute>1957FC4F-18D6-0C0F-41B0-67B00EB43653</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="odpowiedz" id="15249023-AF8F-4F42-C62C-351675B07DC2">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Odpowiedź klienta na dane pytanie - możliwe wartości to [-1, -0.5, 0, 0.5, 1]]]></commentInRDBMS>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>CF0E1EC5-DEA0-FC62-D86C-754DB39ABFF7</importedID>
+<engineerTo>
+<item key="1050C6A9-4530-D446-529C-D30CA5D40A80" value="true"/>
+<item key="ABCAE517-2F8C-4DB7-12AA-345BCB384B4C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,2,1</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2881C717-7761-B3A4-D82E-0D4AAB00ABF1" name="ODP_PK">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>C59F99A7-CB1F-3D1E-92F7-F7D0215B4A4E</importedID>
+<engineerTo>
+<item key="1050C6A9-4530-D446-529C-D30CA5D40A80" value="true"/>
+<item key="ABCAE517-2F8C-4DB7-12AA-345BCB384B4C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>699D7882-0053-FED1-D963-BCD432EE2401</attributeRef>
+<attributeRef>BF33FCE1-5A10-A1A2-D27F-D259873344DB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

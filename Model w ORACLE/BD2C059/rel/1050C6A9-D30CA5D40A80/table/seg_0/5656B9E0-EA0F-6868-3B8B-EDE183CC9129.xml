@@ -1,0 +1,135 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5656B9E0-EA0F-6868-3B8B-EDE183CC9129" name="Ankiety">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Encja Ankiety reprezentuje ankiety wypełniane przez klientów oceniających sprzedawców. Ankieta posiada jedynie data jej wypełnienia, lecz jest skorelowana z odpowiedziami, które dokładnie wskazują z których pytań składała się ankieta i jakie były odpowiedzi na te pytania.]]></commentInRDBMS>
+<generatorID>110442CB-CF2B-AD2C-7154-9DF548E64B8C</generatorID>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>E15FB3A6-B6DB-85B6-08D7-7381C89F70AC</importedID>
+<abbreviation>ANK</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_ankiety" id="A7D1F3DB-4C76-88B3-AB25-A257BB3DACA2">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[PUID - sztucznie generowany]]></commentInRDBMS>
+<generatorID>D0BDF3E2-99BE-23F0-AF0A-35F97B7A82F5</generatorID>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>D3888399-ABEF-F45A-56AA-367F65BA2CDF</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>ANK_SEQ</autoIncrementSequenceName>
+<autoIncrementTriggerName>ANK_SEQ_TRIG</autoIncrementTriggerName>
+</Column>
+<Column name="id_sprzedawcy" id="30178093-A4A7-5617-3E56-E3304567F177">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[ID sprzedawcy którego dotyczy ankieta]]></commentInRDBMS>
+<generatorID>76544712-A152-9892-2364-381DF97F4A67</generatorID>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>B8C7C848-AA96-406B-AABC-CBC1253104B0</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="300366AE-AFAE-BDDC-9D17-911282DB56D7" referredColumn="7BE92B3C-FDDB-D7C6-F7A4-98CE0FFDAA15"/>
+</associations>
+</Column>
+<Column name="login_klienta" id="04981CD1-7E08-3ACE-0651-5B37594E2E9A">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:43:23 UTC</createdTime>
+<ownerDesignName>BD2C059</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E185701A-FF1A-648A-4E46-B6B7A00D3BC0" referredColumn="4EF83FDB-F29E-4780-51F3-76DA76D68AB0"/>
+</associations>
+</Column>
+<Column name="data_wypelnienia" id="78686258-FCBD-5D99-2713-21F49EB22126">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data wskazująca kiedy ankieta została wypełniona]]></commentInRDBMS>
+<generatorID>F5EAFBE1-7A07-01DA-F3DA-B371B70F7600</generatorID>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>1F87D413-2DE9-57DE-C800-39DAAB93E33C</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2A047E5E-A645-672B-CA1F-D86E67C52B34" name="ANK_PK">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<generatorID>5E9ADAD6-8521-2F0E-743E-5622CC5B2075</generatorID>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>75FA574C-8A84-6DE0-EDA9-DEB083DEFC31</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A7D1F3DB-4C76-88B3-AB25-A257BB3DACA2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="45FF950E-5567-37BF-0C21-B295F01C11F3" name="ANK_SPRZED_FK_IDX">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>57B87A22-DAF5-2B8B-0364-5C300DCD77EF</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="30178093-A4A7-5617-3E56-E3304567F177"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="04F7B69F-BA24-58DE-F440-2F77EC1B495D" name="ANK_KLI_FK_IDX">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>4612FC41-4AE4-554F-EEE0-B4DB166961A5</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="04981CD1-7E08-3ACE-0651-5B37594E2E9A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3DEE9926-AA30-6348-AAFC-F4597EFC9DB4" name="ANK_KLI_FK">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<generatorID>992AB641-6C80-B545-E2B5-0A2D391FDFC2</generatorID>
+<ownerDesignName>BD2C059</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="04981CD1-7E08-3ACE-0651-5B37594E2E9A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2D9AD361-A6A4-C9F4-570A-E63FF1140796" name="ANK_SPRZED_FK">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<generatorID>9C66CB7E-48FE-0706-42A3-F1177E12E72F</generatorID>
+<ownerDesignName>BD2C059</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="30178093-A4A7-5617-3E56-E3304567F177"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

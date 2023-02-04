@@ -1,0 +1,23 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="SPRZED DEAL FK" directorySegmentName="seg_0" id="22363CFB-EB22-5BDF-25E2-2F46644861B6">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>FA656D6B-BF6D-A7E7-132C-AF3B3D4417FB</importedID>
+<engineerTo>
+<item key="1050C6A9-4530-D446-529C-D30CA5D40A80" value="true"/>
+<item key="ABCAE517-2F8C-4DB7-12AA-345BCB384B4C" value="true"/>
+</engineerTo>
+<sourcePk>7FA1AFBA-AF87-3634-6E9E-6A2BE4FEA9E7</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>zatrudnia</nameOnSource>
+<nameOnTarget>jest zatrudniony</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>73E9400F-6CCC-1218-C5DE-8CBBCCD5DE78</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>75AF0BA4-D5BE-1778-AE73-A49A59B4547F</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="110442CB-CF2B-AD2C-7154-9DF548E64B8C" name="Ankiety">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Encja Ankiety reprezentuje ankiety wypełniane przez klientów oceniających sprzedawców. Ankieta posiada jedynie data jej wypełnienia, lecz jest skorelowana z odpowiedziami, które dokładnie wskazują z których pytań składała się ankieta i jakie były odpowiedzi na te pytania.]]></commentInRDBMS>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>908A0379-7822-5B7C-B671-E62F22C8B652</importedID>
+<engineerTo>
+<item key="1050C6A9-4530-D446-529C-D30CA5D40A80" value="true"/>
+<item key="ABCAE517-2F8C-4DB7-12AA-345BCB384B4C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>Ankiety</preferredAbbreviation>
+<shortName>ANK</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id sprzedawcy" id="76544712-A152-9892-2364-381DF97F4A67">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[ID sprzedawcy którego dotyczy ankieta]]></commentInRDBMS>
+<generatorID>9C66CB7E-48FE-0706-42A3-F1177E12E72F</generatorID>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>8450097A-2B69-AB3D-1CEE-E26BCF0F7C17</importedID>
+<engineerTo>
+<item key="1050C6A9-4530-D446-529C-D30CA5D40A80" value="true"/>
+<item key="ABCAE517-2F8C-4DB7-12AA-345BCB384B4C" value="true"/>
+</engineerTo>
+<referedAttribute>8F986D53-0401-1B78-9498-5A862D0BBACC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id ankiety" id="D0BDF3E2-99BE-23F0-AF0A-35F97B7A82F5">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[PUID - sztucznie generowany]]></commentInRDBMS>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>3CE75C3B-F1DC-E705-A681-B21B850B44EA</importedID>
+<engineerTo>
+<item key="1050C6A9-4530-D446-529C-D30CA5D40A80" value="true"/>
+<item key="ABCAE517-2F8C-4DB7-12AA-345BCB384B4C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data wypelnienia" id="F5EAFBE1-7A07-01DA-F3DA-B371B70F7600">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data wskazująca kiedy ankieta została wypełniona]]></commentInRDBMS>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>B7E1B3CB-2E10-3345-BC91-FD91DE031271</importedID>
+<engineerTo>
+<item key="1050C6A9-4530-D446-529C-D30CA5D40A80" value="true"/>
+<item key="ABCAE517-2F8C-4DB7-12AA-345BCB384B4C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="login klienta" id="6202134E-F0C5-1509-6851-D081E17C7F59">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:49:52 UTC</createdTime>
+<generatorID>992AB641-6C80-B545-E2B5-0A2D391FDFC2</generatorID>
+<ownerDesignName>BD2C059</ownerDesignName>
+<engineerTo>
+<item key="1050C6A9-4530-D446-529C-D30CA5D40A80" value="true"/>
+<item key="ABCAE517-2F8C-4DB7-12AA-345BCB384B4C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>30B5DE04-5A1A-C144-ED21-826FD5689A91</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5E9ADAD6-8521-2F0E-743E-5622CC5B2075" name="ANK_PK">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>89CEDAAA-BA9B-65A3-E729-B2E97BB9C9AB</importedID>
+<engineerTo>
+<item key="1050C6A9-4530-D446-529C-D30CA5D40A80" value="true"/>
+<item key="ABCAE517-2F8C-4DB7-12AA-345BCB384B4C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D0BDF3E2-99BE-23F0-AF0A-35F97B7A82F5</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

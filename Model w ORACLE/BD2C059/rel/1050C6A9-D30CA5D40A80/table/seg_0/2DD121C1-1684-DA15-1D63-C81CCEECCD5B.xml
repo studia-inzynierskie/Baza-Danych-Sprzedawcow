@@ -1,0 +1,125 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2DD121C1-1684-DA15-1D63-C81CCEECCD5B" name="Klienci">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Encja Klienta reprezentuje klientów którzy zakupili samochody u sprzedawców. W założeniu są oni osobami fizycznymi więc posiadają imię oraz nazwisko. Dodatkowo mogą podać swój pesel, lecz jest to dana opcjonalna.]]></commentInRDBMS>
+<generatorID>B72E2D7F-914B-976C-1693-825B0670B7D9</generatorID>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>E9B26667-9104-C76F-42ED-9D25617B6182</importedID>
+<abbreviation>KLI</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="login" id="4EF83FDB-F29E-4780-51F3-76DA76D68AB0">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:34:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Login używany przy logowaniu, każdy użytkownik musi mieć inny login, który jednoznacznie go identyfikuje]]></commentInRDBMS>
+<ownerDesignName>BD2C059</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="haslo" id="873997BE-4392-D4DF-E24B-B83ED8DC5E65">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:36:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Hasło używane przy logowaniu, musi mieć przynajmniej 80 znaków]]></commentInRDBMS>
+<ownerDesignName>BD2C059</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 CHAR</dataTypeSize>
+<ownDataTypeParameters>40 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="E959C776-C5F1-F0DA-541F-8097121E224E">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Email - służy do kontaktu, a także jest potrzebny do utworzenia konta]]></commentInRDBMS>
+<generatorID>82331055-7B86-06B7-2400-387A61C4BC07</generatorID>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>538C7563-4630-07E0-E4DB-61EB9069E990</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 CHAR</dataTypeSize>
+<ownDataTypeParameters>40 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="imie" id="D65704CD-915F-DF90-D622-435A9BBB07DC">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Imie klienta]]></commentInRDBMS>
+<generatorID>32C0759B-E359-A567-D110-03CFC357E28C</generatorID>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>2C53B9A1-1C82-0A54-9751-3D12DC836DD0</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nazwisko" id="14C62702-6119-9AFF-6601-13ADDAE9171E">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nazwisko klienta]]></commentInRDBMS>
+<generatorID>58B0921B-384D-5BC9-CEE4-79CFFE4F627C</generatorID>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>0D301397-528A-3F49-23A5-9BAB3723A4B2</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 CHAR</dataTypeSize>
+<ownDataTypeParameters>40 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1824FB1A-AFEA-3A4A-5272-BEFCC96F5E52" name="KLI_PK">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<generatorID>EA9933C1-A58C-091F-A203-0CC7D5631CFA</generatorID>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>0C39A7D0-A036-C965-0886-ED4826969C3B</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4EF83FDB-F29E-4780-51F3-76DA76D68AB0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="090EE0B4-B68D-4045-8944-0A2BE08FCCB8" name="KLI_EMAIL_UN">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<generatorID>FCBF4A22-1D86-5F14-4D1E-BB02A79DB9A4</generatorID>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>B005F105-BD15-40C2-AC42-5623912696E7</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E959C776-C5F1-F0DA-541F-8097121E224E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="KLI_EMAIL_CK" directorySegmentName="seg_0" id="5FFA23B3-A2FE-9E67-6A87-380EE45FFB3B">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>1B40498D-65F5-7FF5-0919-5DB37B37818E</importedID>
+<rule><![CDATA[email LIKE '%@%.%' AND email NOT LIKE '@%' AND email NOT LIKE '%@%@%']]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="KLI_HASLO_CK" directorySegmentName="seg_0" id="6BC44CA8-E7FB-6730-602D-5076B2207912">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:47:08 UTC</createdTime>
+<ownerDesignName>BD2C059</ownerDesignName>
+<rule><![CDATA[LENGTH(haslo) >= 8]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

@@ -1,0 +1,24 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ANK SPRZED FK" directorySegmentName="seg_0" id="9C66CB7E-48FE-0706-42A3-F1177E12E72F">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>140ED8C9-2231-8C3C-F90A-6C19AE0EE6AE</importedID>
+<engineerTo>
+<item key="1050C6A9-4530-D446-529C-D30CA5D40A80" value="true"/>
+<item key="ABCAE517-2F8C-4DB7-12AA-345BCB384B4C" value="true"/>
+</engineerTo>
+<targetTransferable>false</targetTransferable>
+<sourcePk>0999804F-DA5F-CFFB-4A74-A5AAA30ED9B2</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>jest oceniany</nameOnSource>
+<nameOnTarget>ocenia</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>75AF0BA4-D5BE-1778-AE73-A49A59B4547F</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>110442CB-CF2B-AD2C-7154-9DF548E64B8C</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

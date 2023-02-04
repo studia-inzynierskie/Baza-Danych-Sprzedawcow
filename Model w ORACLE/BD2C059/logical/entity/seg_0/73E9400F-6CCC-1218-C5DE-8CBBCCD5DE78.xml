@@ -1,0 +1,182 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="73E9400F-6CCC-1218-C5DE-8CBBCCD5DE78" name="Dealerzy">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Encja Dealera reprezentuje firmę która może być większym dystrybutorem lub może zajmować się produkcją samochodów danej marki.
+Firma ta posiada unikalny NIP, nazwę przedsiębiorstwa, a także może posiadać datę założenia.]]></commentInRDBMS>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>EDC81A00-2269-8E00-5F5E-77BA2ADB694F</importedID>
+<engineerTo>
+<item key="1050C6A9-4530-D446-529C-D30CA5D40A80" value="true"/>
+<item key="ABCAE517-2F8C-4DB7-12AA-345BCB384B4C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>Dealerzy</preferredAbbreviation>
+<shortName>DEAL</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id dealera" id="147E6277-027F-4BBC-7751-C930BC62E3FD">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[PUID - sztucznie generowany]]></commentInRDBMS>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>4EA83F50-7B7A-C1CC-6F85-3D120AB985B6</importedID>
+<engineerTo>
+<item key="1050C6A9-4530-D446-529C-D30CA5D40A80" value="true"/>
+<item key="ABCAE517-2F8C-4DB7-12AA-345BCB384B4C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nazwa" id="BE63A163-23B1-50BB-6472-075F46B9DE3E">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nazwa przedsiębiorstwa sprzedającego samochody]]></commentInRDBMS>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>DE0D4EAD-3D7B-3DE1-191E-52CB765036D1</importedID>
+<engineerTo>
+<item key="1050C6A9-4530-D446-529C-D30CA5D40A80" value="true"/>
+<item key="ABCAE517-2F8C-4DB7-12AA-345BCB384B4C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60 CHAR</dataTypeSize>
+<ownDataTypeParameters>60 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nip" id="7F5E714B-773A-9406-EB6F-AAE1B5773A83">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[NIP firmy - musi być unikalny, każda firma ma inny nip]]></commentInRDBMS>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>4A09A752-B483-FFB9-4681-72F69F626F9B</importedID>
+<engineerTo>
+<item key="1050C6A9-4530-D446-529C-D30CA5D40A80" value="true"/>
+<item key="ABCAE517-2F8C-4DB7-12AA-345BCB384B4C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data zalozenia" id="98F73109-89DD-C395-43CE-F419EA8FD8A2">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[data wskazująca kiedy przedsiębiorstwo zostało założone - atrybut opcjonalny]]></commentInRDBMS>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>E585ECEB-C82E-AB50-114E-31304118C377</importedID>
+<engineerTo>
+<item key="1050C6A9-4530-D446-529C-D30CA5D40A80" value="true"/>
+<item key="ABCAE517-2F8C-4DB7-12AA-345BCB384B4C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ulica" id="1D964ED7-EA07-2D92-FDCD-A83A922C728A">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Służy do zlokalizowania przedsiębiorstwa]]></commentInRDBMS>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>CAC99D25-899D-C4B9-C2DF-1A26A77F2BE4</importedID>
+<engineerTo>
+<item key="1050C6A9-4530-D446-529C-D30CA5D40A80" value="true"/>
+<item key="ABCAE517-2F8C-4DB7-12AA-345BCB384B4C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr budynku" id="74A28482-802E-C44D-AA98-68F07B94B5C1">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Służy do zlokalizowania przedsiębiorstwa]]></commentInRDBMS>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>998B4ACD-942D-F77A-11C2-57C3D9A25A19</importedID>
+<engineerTo>
+<item key="1050C6A9-4530-D446-529C-D30CA5D40A80" value="true"/>
+<item key="ABCAE517-2F8C-4DB7-12AA-345BCB384B4C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="kod pocztowy" id="9A91A707-7FD6-6758-C531-602DD7E425F6">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Służy do zlokalizowania przedsiębiorstwa]]></commentInRDBMS>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>7AD8A68D-FF14-63DC-833F-A98C6D24AF30</importedID>
+<engineerTo>
+<item key="1050C6A9-4530-D446-529C-D30CA5D40A80" value="true"/>
+<item key="ABCAE517-2F8C-4DB7-12AA-345BCB384B4C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>6 CHAR</dataTypeSize>
+<ownDataTypeParameters>6 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="miejscowosc" id="C54187F3-7E3E-C4E7-5E74-34EF0828A361">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Służy do zlokalizowania przedsiębiorstwa]]></commentInRDBMS>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>A2399E5A-B57E-82DC-448A-E51309A2BBC2</importedID>
+<engineerTo>
+<item key="1050C6A9-4530-D446-529C-D30CA5D40A80" value="true"/>
+<item key="ABCAE517-2F8C-4DB7-12AA-345BCB384B4C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7FA1AFBA-AF87-3634-6E9E-6A2BE4FEA9E7" name="DEAL_PK">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>4D7DED3A-F4EB-E7AE-AD23-C2151D8B4D01</importedID>
+<engineerTo>
+<item key="1050C6A9-4530-D446-529C-D30CA5D40A80" value="true"/>
+<item key="ABCAE517-2F8C-4DB7-12AA-345BCB384B4C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>147E6277-027F-4BBC-7751-C930BC62E3FD</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="18566942-342E-4CFF-785D-DFAC22DD7596" name="DEAL_NIP_UN">
+<createdBy>HOME</createdBy>
+<createdTime>2023-01-18 13:25:31 UTC</createdTime>
+<ownerDesignName>BD2C059</ownerDesignName>
+<importedID>0F1EFAED-DEA0-C59F-75BE-11E1C4340568</importedID>
+<engineerTo>
+<item key="1050C6A9-4530-D446-529C-D30CA5D40A80" value="true"/>
+<item key="ABCAE517-2F8C-4DB7-12AA-345BCB384B4C" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>7F5E714B-773A-9406-EB6F-AAE1B5773A83</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
